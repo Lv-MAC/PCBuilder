@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="6dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/black"
+        android:id="@+id/setting_rp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="end"
+            android:text="Region Pricing"
+            android:textColor="@color/white"
+            android:paddingLeft="30dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:src="@drawable/settings_region_pricing">
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/black"
+            android:id="@+id/setting_af">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="end"
+                android:text="App Features"
+                android:textColor="@color/white"
+                android:paddingLeft="30dp"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="start"
+                android:padding="10dp"
+                android:src="@drawable/settings_app_feature">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/black"
+            android:id="@+id/setting_db">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_gravity="end"
+                android:text="Developed By"
+                android:textColor="@color/white"
+                android:paddingLeft="30dp"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="start"
+                android:padding="10dp"
+                android:src="@drawable/settings_developed_by">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

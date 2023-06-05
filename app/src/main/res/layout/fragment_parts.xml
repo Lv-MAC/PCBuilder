@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PartsFragment"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:text="Parts"
+            android:layout_gravity="center"
+            android:textColor="@color/white"></TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="CPUs"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_cpu_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="Motherboards"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_motherboards_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="RAM"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_ram_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="Video Cards"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_video_cards_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="Storage"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_storage_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="Power Supply"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_power_supply_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="CPU Coolers"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_cooler_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="Cases"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_cases_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="Case Fans"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_case_fans_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="Operating System"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_operating_system_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="Monitors"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_monitors_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="Keyboards"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_keyboards_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:text="Mice"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="end"
+                    android:padding="30dp"
+                    android:src="@drawable/parts_mice_logo">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

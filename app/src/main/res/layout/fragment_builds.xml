@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:text="Rig Creator"
+            android:layout_gravity="center"
+            android:textColor="@color/white"></TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="80dp">
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:text="High-End Builds"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="@color/black">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:text="Low-End Builds"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/add_builds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Add Builds"
+        app:icon="@drawable/build_float_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_custom_builds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:backgroundTint="#FFC428"
+        app:backgroundTint="#FFCA28"
+        app:fabSize="normal"
+        app:rippleColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/add_builds"
+        app:layout_constraintEnd_toEndOf="@+id/add_builds"
+        android:src="@drawable/build_custom_button"/>
+
+    <TextView
+        android:id="@+id/add_custom_builds_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Custom Build"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/add_custom_builds"
+        app:layout_constraintEnd_toStartOf="@+id/add_custom_builds"
+        app:layout_constraintTop_toTopOf="@+id/add_custom_builds" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_auto_builds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:fabSize="normal"
+        android:clickable="true"
+        android:backgroundTint="#FFC428"
+        app:backgroundTint="#FFCA28"
+        app:rippleColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/add_custom_builds"
+        app:layout_constraintEnd_toEndOf="@+id/add_custom_builds"
+        app:layout_constraintStart_toStartOf="@+id/add_custom_builds"
+        android:src="@drawable/build_automated_button"/>
+
+    <TextView
+        android:id="@+id/add_auto_builds_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Auto Build"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/add_auto_builds"
+        app:layout_constraintEnd_toStartOf="@+id/add_auto_builds"
+        app:layout_constraintTop_toTopOf="@+id/add_auto_builds" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
